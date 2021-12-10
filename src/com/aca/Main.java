@@ -42,6 +42,8 @@ public class Main {
 
 
 
+
+
         /*Scanner scanner = new Scanner(System.in);
         System.out.println("Введите A");
         int firstElement = scanner.nextInt();
