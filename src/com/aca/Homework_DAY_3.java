@@ -110,6 +110,11 @@ public class Homework_DAY_3 {
         System.out.println(a);
         System.out.println(b);*/
 
+        //Number_12
+        /*System.out.println("Мы так называемые \"викинги\" с севера");*/
+
+
+
 
     }
 }

@@ -92,6 +92,50 @@ public class Homework_DAY_4 {
         else
             System.out.println("Воскресенье");*/
 
+        //Number_8
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.println("Сколько шариков Вы хотите брать?");
+        int number = scanner.nextInt();
+        if (number % 15 == 0)
+            System.out.println("Вы можете брать и трёхшариковое мороженое, и пятишариковое");
+        else if (number % 3 == 0)
+            System.out.println("Вы можете брать только трёхшариковое мороженое");
+        else if (number % 5 == 0)
+            System.out.println("Вы можете брать только пятишариковое мороженое");
+        else
+            System.out.println("Выберите другое количество");*/
+
+        //Number__
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.print(" Введите год");
+        int year = scanner.nextInt();
+        if (year % 4 == 0)
+            System.out.println("Год является высокосным");
+        else
+            System.out.println("Год не является высокосным");*/
+
+        //Number_8
+        /*double dVariable = (Math.random()*10000);
+        int iVariable = (int) dVariable;
+        System.out.println(iVariable);
+        boolean a, b;
+        if (Math.abs(iVariable) < 1000) {
+            a = true;
+            System.out.println("a = " + a);
+        }
+        else {
+            a = false;
+            System.out.println("a = " + a);
+        }
+        if (iVariable % 3 == 0 || iVariable % 5 == 0) {
+            b = true;
+            System.out.println("b = " + b);
+        }
+        else {
+            b = false;
+            System.out.println("b = " + b);
+        }*/
+
 
         }
 
