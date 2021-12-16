@@ -18,8 +18,7 @@ public class Homework_DAY_3 {
         float floatElement = longElement;
         System.out.println("Переменная типа float = " + floatElement);
         double doubleElement = floatElement;
-        System.out.println("Переменная типа double = " + doubleElement);
-        */
+        System.out.println("Переменная типа double = " + doubleElement);*/
 
         //Number_2
         /*Scanner scanner = new Scanner(System.in);
