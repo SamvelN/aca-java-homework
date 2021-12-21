@@ -144,5 +144,12 @@ public class Main {
         int b = sc.nextInt();
         String name = a > b ? "a" : a == b ? "no" : "b";
         System.out.println(name);*/
+
+                                           //Cicle
+
+
+
+
+
     }
 }
