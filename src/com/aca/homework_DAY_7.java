@@ -20,7 +20,7 @@ public class homework_DAY_7 {
 
         //Num_2
         /*Scanner sc = new Scanner(System.in);
-        System.out.println("Введите верхний нижний желаемого диапазона");
+        System.out.println("Введите нижний предел желаемого диапазона");
         int lowElement = sc.nextInt();
         System.out.println("Введите верхний предел желаемого диапазона");
         int upElement = sc.nextInt();
@@ -28,8 +28,12 @@ public class homework_DAY_7 {
         int remainder = sc.nextInt();
         System.out.println("Введите число на которого надо делить");
         int devided = sc.nextInt();
+        for (int i = 0; devided == 0; i++) {
+            System.out.println("Число не может делиться на 0, введите другое число");
+            devided = sc.nextInt();
+        }
         for (int i = lowElement; i < upElement; i++) {
-            if (i%devided == remainder) {
+            if (i % devided == remainder) {
                 System.out.println(i);
             }
         }*/
