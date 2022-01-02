@@ -165,7 +165,7 @@ public class homework_DAY_6 {
         //Num_15    chstacvec
 
         //Num_16
-        /*double num_d = Math.random()*100;
+        double num_d = Math.random()*100;
         int num = (int) num_d;
         System.out.println(num);             //для того, чтоб не ломать голову
         while (num > 0) {
@@ -182,7 +182,7 @@ public class homework_DAY_6 {
             else {
                 System.out.println("Мало");
             }
-        }*/
+        }
 
         //Num_17
         /*Scanner sc = new Scanner(System.in);

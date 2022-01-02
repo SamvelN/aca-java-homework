@@ -48,6 +48,10 @@ public class homework_DAY_7 {
                 System.out.println(num*num);
                 k++;
             }
+            else if (sqrt > k){
+                k++;
+                i--;
+            }
         }*/
 
         //Num_4
