@@ -1,5 +1,9 @@
 package com.aca;
 
+import java.util.Random;
+import java.util.Scanner;
+import java.lang.Math;
+
 public class homework_DAY_8 {
     public static void main(String[] args) {
 
@@ -25,7 +29,8 @@ public class homework_DAY_8 {
             System.out.println("Введите " + i + "ый элемент массива");
             ar [i] = sc.nextInt();
         }
-        for (int i = 1; i < length; i=i+2) {
+        for (int i = 1; i < length; i++) {
+            if (ar[i]%2 == 0)
             System.out.println(ar[i]);
         }*/
 
@@ -91,18 +96,16 @@ public class homework_DAY_8 {
             System.out.print(ar[i] + " ");
         }
         System.out.println();
+        int index = 0;
         int min = ar[0];
         for (int i = 0; i < length; i++) {
             if (ar[i] < min) {
                 min = ar[i];
+                index = i;
             }
         }
-        System.out.println(min);
-        for (int i = 0; i < length; i++) {
-            if (ar[i] == min) {
-                System.out.println(i);
-            }
-        }*/
+        System.out.println(index);
+        System.out.println(min);*/
 
         //Num_7
         /*Scanner sc = new Scanner(System.in);
