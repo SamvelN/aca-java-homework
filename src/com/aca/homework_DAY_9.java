@@ -205,5 +205,17 @@ public class homework_DAY_9 {
             }
             System.out.println();
         }*/
+
+        //Num_9
+        /*Scanner sc = new Scanner(System.in);
+        System.out.print("Введите размер массива");
+        int length = sc.nextInt();
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < length; j++) {
+                if ()
+
+            }
+
+        }*/
     }
 }
