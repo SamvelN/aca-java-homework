@@ -208,14 +208,102 @@ public class homework_DAY_9 {
 
         //Num_9
         /*Scanner sc = new Scanner(System.in);
-        System.out.print("Введите размер массива");
+        System.out.print("Введите размер массива ");
         int length = sc.nextInt();
+        int[][] ar = new int[length][length];
         for (int i = 0; i < length; i++) {
-            for (int j = 0; j < length; j++) {
-                if ()
-
+            if (i % 4 == 0) {
+                for (int j = i/2; j == i/2; j++) {
+                    for (int k = 0; k < length; k++) {
+                        if (k >= i/2 - 1 && k < length - i/2)
+                            ar[j][k] = 1;
+                    }
+                }
+            } else if (i % 4 == 1) {
+                for (int j = i / 2; j < length - i / 2; j++) {
+                    for (int k = length - i / 2 - 1; k == length - i / 2 - 1; k++) {
+                            ar[j][k] = 1;
+                    }
+                }
+            } else if (i % 4 == 2) {
+                for (int j = length - i / 2; j == length - i / 2; j++) {
+                    for (int k = i / 2 - 1; k <= length - i / 2 - 1; k++) {
+                            ar[j][k] = 1;
+                    }
+                }
+            } else {
+                for (int j = i / 2 + 1; j < length - i / 2 + 1; j++) {
+                    for (int k = i / 2 - 1; k == i / 2 - 1; k++) {
+                            ar[j][k] = 1;
+                    }
+                }
             }
+        }
+        for (int j = 0; j < length; j++) {
+            for (int k = 0; k < length; k++) {
+                System.out.print(ar[j][k] + "  ");
+            }
+            System.out.println();
+        }*/
 
+        //Num_10
+        /*Scanner sc = new Scanner(System.in);
+        System.out.print("Введите размер массива ");
+        int length = sc.nextInt();
+        int[][] ar = new int[length][length];
+        int q = 0;
+        for (int i = 0; i <= 2 * length; i++) {
+            if (i % 4 == 0) {
+                for (int j = i/4; j == i/4; j++) {
+                    for (int k = 0; k < length - i/4; k++) {
+                        if (k >= i/4 - 1 && k < length - i/4) {
+                            ar[j][k] = q;
+                            q++;
+                        }
+                    }
+                }
+            } else if (i % 4 == 1) {
+                for (int j = i / 4 + 1; j < length - i / 4 - 1; j++) {
+                    for (int k = length - i / 4 - 1; k == length - i / 4 - 1; k++) {
+                            ar[j][k] = q;
+                            q++;
+                    }
+                }
+            } else if (i % 4 == 2) {
+                for (int j = length - i / 4 - 1; j == length - i / 4 - 1; j++) {
+                    for (int k = length - i / 4 - 1; k > i / 4; k--) {
+                            ar[j][k] = q;
+                            q++;
+                    }
+                }
+            } else {
+                for (int j = length - i / 4 - 1; j > i / 4 + 1; j--) {
+                    for (int k = i / 4; k == i / 4; k++) {
+                            ar[j][k] = q;
+                            q++;
+                    }
+                }
+            }
+        }
+        for (int j = 0; j < length; j++) {
+            for (int k = 0; k < length; k++) {
+                System.out.print(ar[j][k] + "  ");
+                int z1 = 0, zmax = 0;
+                for (int i = 0; ar[j][k] > 0; i++) {
+                    ar[j][k] = ar[j][k] / 10;
+                    z1 = i;
+                }
+                int f = 2 * length;
+                for (int i = 0; f > 0; i++) {
+                    f = f / 10;
+                    zmax = i;
+                }
+                for (int i = 0; i <= zmax - z1; i++) {
+                    if (ar[j][k] / 10 == 0)
+                        System.out.print(" ");
+                }
+            }
+            System.out.println();
         }*/
     }
 }

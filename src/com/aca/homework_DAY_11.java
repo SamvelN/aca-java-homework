@@ -129,7 +129,7 @@ public class homework_DAY_11 {
     //Num_6
     public static int fib(int n) {
         if (n < 2) {
-            return 1;
+            return n;
         } else {
             return fib(n - 1) + fib(n - 2);
         }
