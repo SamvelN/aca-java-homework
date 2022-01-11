@@ -1,5 +1,6 @@
 package com.aca;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class homework_DAY_11 {
@@ -78,7 +79,32 @@ public class homework_DAY_11 {
         System.out.println(search(ar, el));*/
 
         //Num_14
+        /*Scanner sc = new Scanner(System.in);
+        System.out.print("Введите размер массива ");
+        int length = sc.nextInt();
+        int [] array = new int[length];
+        for (int i = 0; i < length; i++) {
+            array[i] = new Random().nextInt(100);
+            System.out.print(array[i]);
+        }
+        int [] ar_1 = copyOf(array);
+        System.out.println();
+        for (int i = 0; i < length; i++) {
+            System.out.print(ar_1[i]);
+        }*/
 
+        //Num_15
+        /*Scanner sc = new Scanner(System.in);
+        System.out.print("Введите количество студентов в курсе ");
+        int length = sc.nextInt();
+        int[] array = new int[length];
+        for (int i = 0; i < length; i++) {
+            System.out.print("Введите оценку обучающегося ");
+            array[i] = sc.nextInt();
+        }
+        System.out.println("Минимальная оценка = " + funcmin(array));
+        System.out.println("Максимальная оценка = " + funcmax(array));
+        System.out.println("Средняя оценка = " + funsredn(array));*/
     }
 
     //Num_1
@@ -117,8 +143,7 @@ public class homework_DAY_11 {
         for (int i = 2; i < n; i++) {
             if (n % i != 0) {
                 a = true;
-            }
-            else {
+            } else {
                 a = false;
                 break;
             }
@@ -144,7 +169,7 @@ public class homework_DAY_11 {
     }
 
     //Num_8
-    public static boolean isVowel (char a) {
+    public static boolean isVowel(char a) {
         if (a == 'e' || a == 'u' || a == 'i' || a == 'o' || a == 'a')
             return true;
         else
@@ -198,11 +223,48 @@ public class homework_DAY_11 {
         for (int i = 0; i < ar.length; i++) {
             if (ar[i] == a) {
                 k = i;
-            }
-            else
+            } else
                 k = -1;
         }
         return k;
+    }
+
+    //Num_14
+    public static int[] copyOf(int[] array) {
+        int[] ar_1 = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            ar_1[i] = array[i];
+        }
+        return ar_1;
+    }
+
+    //Num_15
+    public static int funcmax(int[] array) {
+        int maxelement = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (maxelement < array[i])
+                maxelement = array[i];
+        }
+        return maxelement;
+    }
+
+    public static int funcmin(int[] array) {
+        int minlement = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (minlement > array[i])
+                minlement = array[i];
+        }
+        return minlement;
+    }
+
+    public static float funsredn(int[] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum = sum + array[i];
+        }
+        int sredn1 = 100 * sum / array.length;
+        float sredn = (float) sredn1 / 100;
+        return sredn;
     }
 
 }
